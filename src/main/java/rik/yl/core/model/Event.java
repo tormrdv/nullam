@@ -33,9 +33,11 @@ public class Event {
     private String place;
     private String info;
 
+    //Set FK for person
     @OneToMany(mappedBy = e_id)
     private Set<Person> persons;
 
+    //Set FK for company
     @OneToMany(mappedBy = e_id)
     private Set<Company> companies;
 }
